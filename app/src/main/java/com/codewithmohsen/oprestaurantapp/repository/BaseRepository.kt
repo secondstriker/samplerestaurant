@@ -21,8 +21,11 @@ constructor(private val dispatchers: AppCoroutineDispatchers) {
         CoroutineScope(dispatchers.main).launch {
 
             result.value = (Resource.loading(null))
+            val apiResponse: NetworkResponse<RequestType, Any>
 
-            val apiResponse = createCall()
+            withContext(dispatchers.IO){
+                apiResponse = createCall()
+            }
             when (apiResponse) {
                 is NetworkResponse.Success -> {
 
