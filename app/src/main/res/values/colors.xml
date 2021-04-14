@@ -11,9 +11,13 @@
     <color name="grey_200">#EEEEEE</color>
     <color name="grey_400">#BDBDBD</color>
     <color name="grey_600">#757575</color>
-    <color name="blue">#2f43e5</color>
+    <color name="blue">#217acc</color>
     <color name="grey_900">#212121</color>
     <color name="pink_500">#E91E63</color>
     <color name="purple_900">#4A148C</color>
     <color name="green_600">#43A047</color>
+    <color name="purple_text">#403d8d</color>
+
+    <color name="duskYellow">#fdc737</color>
+    <color name="lightGrey">#a5a5a5</color>
 </resources>
