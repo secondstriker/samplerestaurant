@@ -1,13 +1,11 @@
 package com.codewithmohsen.oprestaurantapp.ui.restaurants
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.codewithmohsen.oprestaurantapp.repository.MenuRepository
+import javax.inject.Inject
 
-class RestaurantsViewModel : ViewModel() {
+class RestaurantsViewModel @Inject constructor(
+    private val repo: MenuRepository): ViewModel() {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is home Fragment"
-    }
-    val text: LiveData<String> = _text
+    fun loadData() = repo.loadMenuItems()
 }

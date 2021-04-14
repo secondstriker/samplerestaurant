@@ -2,6 +2,7 @@ package com.codewithmohsen.oprestaurantapp
 
 import android.app.Activity
 import android.app.Application
+import com.codewithmohsen.oprestaurantapp.di.AppInjector
 import com.codewithmohsen.oprestaurantapp.di.DaggerAppComponent
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
@@ -15,8 +16,9 @@ class OpRestaurantApp: Application(), HasActivityInjector {
 
     override fun onCreate() {
         super.onCreate()
-        DaggerAppComponent.builder().application(this)
-            .build().inject(this)
+
+
+        AppInjector.init(this)
     }
 
     override fun activityInjector(): AndroidInjector<Activity> = dispatchingAndroidInjector

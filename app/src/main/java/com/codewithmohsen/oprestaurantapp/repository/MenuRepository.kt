@@ -8,7 +8,7 @@ import com.codewithmohsen.oprestaurantapp.model.MenuItem
 import com.codewithmohsen.oprestaurantapp.model.MenuModel
 import javax.inject.Inject
 
-class MenuServiceRepository @Inject constructor(
+class MenuRepository @Inject constructor(
     private val dispatchers: AppCoroutineDispatchers,
     private val service: MenuService
 ): BaseRepository<List<MenuItem>, MenuModel>(dispatchers) {
