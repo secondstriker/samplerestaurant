@@ -3,4 +3,10 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="restaurants_dishes"><![CDATA[Restaurants & dishes]]></string>
+    <string name="cuisines">Cuisines</string>
+    <string name="refine">Refine</string>
+    <string name="bag">bag</string>
+    <string name="my_grubhub">My Grubhub</string>
 </resources>
