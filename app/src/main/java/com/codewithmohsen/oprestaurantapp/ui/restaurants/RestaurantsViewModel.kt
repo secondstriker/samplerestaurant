@@ -1,10 +1,10 @@
-package com.codewithmohsen.oprestaurantapp.ui.home
+package com.codewithmohsen.oprestaurantapp.ui.restaurants
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class HomeViewModel : ViewModel() {
+class RestaurantsViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
         value = "This is home Fragment"

@@ -1,4 +1,4 @@
-package com.codewithmohsen.oprestaurantapp.ui.home
+package com.codewithmohsen.oprestaurantapp.ui.restaurants
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.codewithmohsen.oprestaurantapp.R
 
-class HomeFragment : Fragment() {
+class RestaurantsFragment : Fragment() {
 
-    private lateinit var homeViewModel: HomeViewModel
+    private lateinit var restaurantsViewModel: RestaurantsViewModel
 
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        homeViewModel =
-                ViewModelProvider(this).get(HomeViewModel::class.java)
+        restaurantsViewModel =
+                ViewModelProvider(this).get(RestaurantsViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_home, container, false)
         val textView: TextView = root.findViewById(R.id.text_home)
-        homeViewModel.text.observe(viewLifecycleOwner, Observer {
+        restaurantsViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root
