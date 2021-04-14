@@ -20,4 +20,5 @@
 
     <color name="duskYellow">#fdc737</color>
     <color name="lightGrey">#a5a5a5</color>
+    <color name="grayBackgroundLight">#f6f6f6</color>
 </resources>

@@ -6,6 +6,7 @@
     <data>
 
         <import type="com.codewithmohsen.oprestaurantapp.repository.Status" />
+
         <import type="android.view.View" />
 
         <variable
@@ -53,11 +54,11 @@
                         layout="@layout/item_restaurant"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
                         android:clipToPadding="false"
                         android:orientation="horizontal"
-                        android:paddingStart="8dp"
                         android:paddingTop="8dp"
-                        android:paddingEnd="8dp"
                         android:paddingBottom="8dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -78,6 +79,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/recyclerViewRestaurant"
                         tools:itemCount="10"
+                        android:nestedScrollingEnabled="true"
                         tools:listitem="@layout/item_food" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
@@ -100,7 +102,7 @@
                 android:layout_marginTop="16dp"
                 android:text="@string/restaurant"
                 android:textColor="@color/grey_900"
-                android:textSize="8pt"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
